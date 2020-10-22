@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Liar's Dice</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" href="PerudoCupBlue.png">
+    </head>
+    <body>
+        <header>
+            <h1>LIAR'S DICE</h1>
+            <div id="htp" class="btn">How To Play</div>
+        </header>
+        <main>
+            <h1 id="instructions"></h1>
+            <div class="cups-dice-bets">
+                <div class="flexbox">
+                    <span class="player" id="Blue">
+                        <div class="player-dice" id="Blue-dice"></div>
+                        <img class="cup" id="Blue-cup" src="PerudoCupBlue.png">
+                        
+                        <h2 class="bet" id="bet-Blue"></h2>
+                    </span>
+                    <span class="player" id="Green">
+                        <div class="player-dice" id="Green-dice"></div>
+                        <img class="cup" id="Green-cup" src="PerudoCupGreen.png">
+                        
+                        <h2 class="bet" id="bet-Green"></h2>
+                    </span>
+                    <span class="player" id="Pink">
+                        <div class="player-dice" id="Pink-dice"></div>
+                        <img class="cup" id="Pink-cup" src="PerudoCupPink.png">
+                        
+                        <h2 class="bet" id="bet-Pink"></h2>
+                    </span>
+                    <span class="player" id="Red">
+                        <div class="player-dice" id="Red-dice"></div>
+                        <img class="cup" id="Red-cup" src="PerudoCupRed.png"> 
+                        
+                        <h2 class="bet" id="bet-Red"></h2>
+                    </span>
+                </div>    
+                <div>
+                    
+                </div> 
+            </div>
+            
+            <div id="user-options" class="user-options">
+                <span id="btn" class="btn" style="display: none;">Start</span>
+                <span id="bet" class="btn" style="display: none;">Bet</span>
+                <span id="dudo" class="btn" style="display: none;">Dudo</span>
+                <span id="new-game" class="btn">New Game</span>
+                <div id="die"></div>
+                <div id="bet-btns"></div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>

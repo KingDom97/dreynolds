@@ -1,0 +1,147 @@
+* {
+    margin:0; padding:0; box-sizing:border-box; 
+    font-family: sans-serif;
+}
+
+header {
+    background-color: aqua;
+    margin: 0px, 0px;
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+}
+@keyframes shake {
+    0% { transform: translate(10px); }
+    10% { transform: translate(0px); }
+    20% { transform: translate(-10px); }
+    30% { transform: translate(0px); }
+    40% { transform: translate(10px); }
+    50% { transform: translate(0px); }
+    60% { transform: translate(-10px); }
+    70% { transform: translate(0px); }
+    80% { transform: translate(10px); }
+    90% { transform: translate(0px); }
+    100% { transform: translate(10px); }
+}
+@keyframes byebye {
+    0% { transform: translateY(0px);}
+    30% { transform: translateY(100px);}
+    70% { transform: translateY(200px);}
+    100% { transform: translateY(300px);}
+}
+@keyframes lift {
+    10% {transform: translateY(-5px);}
+    20% {transform: translateY(-10px);}
+    30% {transform: translateY(-20px);}
+    40% {transform: translateY(-30px);}
+    50% {transform: translateY(-40px);}
+    60% {transform: translateY(-50px);}
+    70% {transform: translateY(-55px);}
+    80% {transform: translateY(-60px);}
+    90% {transform: translateY(-65px);}
+    100% {transform: translateY(-70px);}
+}
+@keyframes drop {
+    10% {transform: translateY(-70px);}
+    20% {transform: translateY(-65px);}
+    30% {transform: translateY(-60px);}
+    40% {transform: translateY(-55px);}
+    50% {transform: translateY(-50px);}
+    60% {transform: translateY(-40px);}
+    70% {transform: translateY(-30px);}
+    80% {transform: translateY(-20px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+.cup {
+    max-width: 100%;
+    position: relative;
+}
+.lift {
+    animation-name: lift;
+    animation-duration: 1s;
+}
+.drop {
+    animation-name: drop;
+    animation-duration: 1s;
+}
+.hold {
+    transform: translateY(-70px);
+    
+}
+.byebye {
+    animation-name: byebye;
+    animation-duration: 2s;
+}
+.shake {
+    animation-name: shake;
+    animation-duration: 1.5s;
+}
+.bet {
+    margin-top: -50px;
+    text-align: center;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    top: 300;
+    align-content: center;
+}
+.btn {
+    border: 3px solid black;
+    background-color: aqua;
+    padding: 20px 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+.btn:hover {
+    background-color: darkorange;
+    cursor: grab;
+    box-shadow: dimgray 3px 3px 3px 0px;
+}
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+.user-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.dice {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10%;
+}
+.dice:hover {
+    background-color: rgb(170, 170, 170);
+    cursor: grab;
+    box-shadow: dimgray 2px 2px 2px 0px;
+}
+#instructions {
+    text-align: center;
+}
+.player-dice {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 75%;
+}
+#htp {
+    position: absolute;
+    justify-content: left;
+    top: 3px;
+    right: 2px;
+    padding: 38px 20px;
+}
+#htp-link {
+    display: block;
+    height: 100%;
+}
+p {
+    text-align: center;
+    padding-top: 10px;
+}
